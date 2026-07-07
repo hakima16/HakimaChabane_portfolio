@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+
+    <!-- ⭐ Inline CSS with Purple Theme -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f3fa; /* soft lavender background */
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 20px;
+            background: #6a0dad; /* your purple */
+            color: white;
+        }
+
+        .main-heading {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .sub-heading {
+            margin: 5px 0 15px;
+            font-size: 1.1rem;
+        }
+
+        /* Back button */
+        .back-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 14px;
+            background: white;
+            color: #6a0dad;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .back-btn:hover {
+            background: #e6e6e6;
+        }
+
+        main {
+            max-width: 600px;
+            margin: 40px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #6a0dad;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input, textarea {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        textarea {
+            height: 120px;
+            resize: none;
+        }
+
+        .btn {
+            padding: 12px;
+            background: #6a0dad; /* purple button */
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #5a0ca0;
+        }
+
+        #status-message {
+            text-align: center;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #6a0dad;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="main-heading">Contact Me</h1>
+        <p class="sub-heading">Send me a message directly through this form</p>
+
+        <!-- ⭐ Back to Home Button -->
+        <a href="index.html" class="back-btn">← Back to Home</a>
+    </header>
+
+    <main>
+        <section class="section">
+            <h3>Get in Touch</h3>
+
+            <form id="contact-form">
+                <input type="text" name="from_name" placeholder="Your Name" required>
+                <input type="email" name="reply_to" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+
+            <p id="status-message"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Hakima Chabane</p>
+    </footer>
+
+    <!-- EmailJS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+    (function(){
+        emailjs.init("AT74ZqN97GPqLwwh_");
+    })();
+
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        emailjs.sendForm("service_5q7yu94", "template_4sbmv8g", this)
+            .then(() => {
+                document.getElementById("status-message").textContent = "Message sent successfully!";
+            }, (error) => {
+                document.getElementById("status-message").textContent = "Failed to send message.";
+            });
+    });
+</script>
+
+</body>
+</html>
+

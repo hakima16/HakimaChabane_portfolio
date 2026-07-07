@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Hakima Chabane</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Inline CSS for photo layout -->
+    <style>
+        /* Make main profile photo smaller and circular */
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.15);
+        }
+
+        /* Container for extra photos */
+        .extra-photos {
+            margin-top: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+
+        /* Style for family + graduation photos */
+        .about-photo {
+            width: 220px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.15);
+        }
+
+        /* Card spacing fix */
+        .about-sidebar .card {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="page-header">
+        <div class="hero-content">
+            <h1>About Me</h1>
+            <p class="sub-heading">Banking Operations · Business Analysis · Full‑Stack Development</p>
+        </div>
+
+        <div class="hero-photo">
+            <img src="images/HakimaChabane.jpg" alt="Hakima Chabane" class="profile-photo">
+        </div>
+    </header>
+
+    <main class="section about-layout">
+
+        <!-- Left column: story -->
+        <section class="about-main">
+
+            <h2>My Journey</h2>
+            <p>
+                My name is <strong>Hakima Chabane</strong>. I immigrated to the United States in 2016, and like many
+                people starting over in a new country, I faced difficult situations, learned new systems, and rebuilt
+                my life step by step. Along the way, I met people from many different backgrounds, cultures, and
+                experiences, which shaped my perspective and strengthened my ability to connect with others.
+            </p>
+            <p>
+                I’m multilingual — fluent in French, Berber, Arabic, and English, and currently learning Spanish.
+                Being able to communicate across languages has helped me understand people more deeply and work
+                comfortably in diverse environments.
+            </p>
+
+            <h2>Education & Professional Background</h2>
+            <p>
+                I hold a Master’s degree in Mechanical Engineering (Energy Engineering) and later expanded my path
+                into technology through Information Technology and Full‑Stack Development studies. This combination
+                of analytical thinking and technical skills allows me to approach problems with both structure and
+                creativity.
+            </p>
+            <p>
+                Professionally, I work in banking operations, where I support teller transactions, cash handling,
+                compliance documentation, digital banking support, and client relationship management. My growing
+                interest in business analysis and technology drives me to connect operational workflows with
+                practical technical solutions, especially in areas like process improvement and digital transformation.
+            </p>
+
+            <h2>Who I Am Outside of Work</h2>
+            <p>
+                I’m a mom and a wife, and balancing family, work, and continuous learning has shaped my discipline,
+                resilience, and motivation. My family inspires me to keep growing, improving, and building a better
+                future.
+            </p>
+            <p>
+                I see growth as a lifelong adventure and I’m always exploring something new — whether it’s baking,
+                hiking, dancing, or spending time with my family. I enjoy helping others be successful, sharing what
+                I learn, and encouraging people around me to believe in their own potential.
+            </p>
+
+            <h2>Looking Ahead</h2>
+            <p>
+                My goal is to continue growing in roles that blend banking, business analysis, and technology. I’m
+                especially interested in improving customer experiences, optimizing workflows, and contributing to
+                digital solutions that make everyday work easier and more efficient.
+            </p>
+
+        </section>
+
+        <!-- Right column: languages, timeline, fun facts + photos -->
+        <aside class="about-sidebar">
+
+            <section class="card">
+                <h3>Languages</h3>
+                <ul class="pill-list">
+                    <li>🇫🇷 French</li>
+                    <li>ⵣ Berber</li>
+                    <li>🇩🇿 Arabic</li>
+                    <li>🇺🇸 English</li>
+                    <li>🇪🇸 Spanish (learning)</li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h3>Journey Timeline</h3>
+                <ul class="timeline">
+                    <li>
+                        <span class="timeline-year">2016</span>
+                        <span class="timeline-text">Immigrated to the United States and began rebuilding my life.</span>
+                    </li>
+                    <li>
+                        <span class="timeline-year">Banking</span>
+                        <span class="timeline-text">Grew experience in banking operations and client support.</span>
+                    </li>
+                    <li>
+                        <span class="timeline-year">Tech</span>
+                        <span class="timeline-text">Studied IT and Full‑Stack Development to expand my technical skills.</span>
+                    </li>
+                    <li>
+                        <span class="timeline-year">Now</span>
+                        <span class="timeline-text">Growing toward Business Analysis and product‑focused roles.</span>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h3>Fun Facts</h3>
+                <ul class="fun-list">
+                    <li>Love baking and trying new recipes.</li>
+                    <li>Enjoy hiking and being outdoors.</li>
+                    <li>Dancing is one of my favorite ways to relax.</li>
+                    <li>Always learning — from languages to tech tools.</li>
+                    <li>Helping others succeed makes me genuinely happy.</li>
+                </ul>
+            </section>
+
+
+
+    </main>
+
+    <footer>
+        <p>
+            <a href="index.html">Back to Home</a> |
+            <a href="https://github.com/hakima16" target="_blank">GitHub</a> |
+            <a href="https://hakima16.github.io/" target="_blank">GitHub.io</a> |
+            <a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a>
+        </p>
+        <p id="current-year"></p>
+
+        <script>
+            const year = new Date().getFullYear();
+            document.getElementById('current-year').textContent = `© ${year} Hakima Chabane`;
+        </script>
+    </footer>
+
+</body>
+</html>

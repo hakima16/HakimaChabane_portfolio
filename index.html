@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakima Chabane | Home</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 class="main-heading">Hakima Chabane</h1>
+        <p class="sub-heading">Banking Operations | Business Analysis | Full‑Stack Development</p>
+    </header>
+
+    <main>
+        <h2>Home</h2>
+
+        <!-- Welcome Section -->
+        <section id="welcome" class="section welcome-section">
+            <h3 class="section-title">Welcome</h3>
+            <p>
+                I’m <strong>Hakima Chabane</strong>, a banking operations professional with a strong foundation in business analysis and full‑stack development. 
+                I focus on improving workflows, supporting digital banking systems, and building practical technology solutions that enhance operational efficiency.
+            </p>
+            <p>
+                This portfolio highlights selected projects, technical work, and professional experience. 
+                To learn more about my background, you can read the extended version on my “About Me” page.
+            </p>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="section">
+            <h3>About Me</h3>
+            <p>
+                I’m a banking operations professional with experience in teller services, compliance documentation, digital banking support, and workflow improvement. 
+                My technical background includes full‑stack development, database work, and system documentation, allowing me to bridge branch operations with technology.
+            </p>
+            <p>
+                <a href="aboutme.html">Read more about me</a>
+
+            </p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section courses-section">
+            <h3>Projects & Course Work</h3>
+            <div class="button-container">
+                <a href="customer-insights-dashboard/project-description.html" class="btn">Customer Insights Dashboard</a>
+                <a href="MomLife Organizer/project-description.html" class="btn">MomLife Organizer</a>
+                <a href="Team Daily Tracker/project-description.html" class="btn">Team Daily Tracker</a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h3>Connect With Me</h3>
+            <div class="button-container">
+                <a href="contact.html" class="btn">Contact Me</a>
+                <a href="https://www.linkedin.com/feed/" target="_blank" class="btn">LinkedIn</a>
+                <a href="resume.pdf" target="_blank" class="btn">My Resume</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            <a href="https://github.com/hakima16" target="_blank">GitHub</a> |
+            <a href="https://hakima16.github.io/" target="_blank">GitHub.io</a> |
+            <a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a> |
+            <a href="https://www.codecademy.com/" target="_blank">Codecademy</a> |
+            <a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a>
+        </p>
+
+        <p id="current-year"></p>
+
+        <script>
+            const year = new Date().getFullYear();
+            document.getElementById('current-year').textContent = `© ${year} Hakima Chabane`;
+        </script>
+
+        <script src="https://lint.page/kit/880bd5.js" crossorigin="anonymous"></script>
+    </footer>
+
+</body>
+</html>
