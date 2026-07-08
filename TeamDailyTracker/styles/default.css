@@ -14,26 +14,25 @@ header {
 }
 
 h1 {
-    /* keep your existing h1 styles */
     font-family: 'Georgia', serif;
     color: #E0AAFF; /* whatever you have now */
 }
 
 h2 {
-    font-family: 'Georgia', serif; /* same font as h1 */
+    font-family: 'Georgia', serif;
     color: #500879; /* new deep purple for h2 */
 }
 
 /* Navigation */
 nav a {
-    color: #F0F4F8; /* white/light nav links */
+    color: #F0F4F8;
     text-decoration: none;
     margin: 0 10px;
     font-weight: bold;
 }
 
 nav a:hover {
-    color: #FF77FF; /* hover vivid pink accent */
+    color: #FF77FF;
     text-decoration: underline;
     cursor: pointer;
 }
@@ -64,17 +63,17 @@ figure img {
 figcaption {
     font-style: italic;
     margin-top: 0.5rem;
-    color: #730d85; /* soft pastel purple */
+    color: #730d85;
 }
 
 /* Links in content */
 a {
-    color: #7F00FF; /* vivid purple-blue */
+    color: #7F00FF;
     text-decoration: none;
 }
 
 a:hover {
-    color: #FF77FF; /* vivid pink accent */
+    color: #FF77FF;
     text-decoration: underline;
     cursor: pointer;
 }
@@ -84,7 +83,7 @@ blockquote {
     text-align: center;
     font-style: italic;
     margin: 2rem 0;
-    color: #AA00FF; /* vivid accent */
+    color: #AA00FF;
 }
 
 blockquote br {

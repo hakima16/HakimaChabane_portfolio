@@ -1,90 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hakima Chabane's Helpful Crane | WEB250 | Team Daily Tracker – Project Description</title>
-  <link rel="stylesheet" type="text/css" href="styles/default.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Daily Tracker – Project Description | Hakima Chabane</title>
+
+    <!-- Use your existing CSS file -->
+    <link rel="stylesheet" href="styles/default.css">
 </head>
 
 <body>
 
-<!-- Header include -->
-<div data-include="components/header.html"></div>
+    <header>
+        <h1>Team Daily Tracker</h1>
+        <p class="sub-heading">PHP · MySQL · CRUD · Authentication</p>
 
-<main>
-  <h2>Project Description – Team Daily Tracker</h2>
+        <a href="../index.html" class="back-btn">← Back to Home</a>
+    </header>
 
-  <h3>About the Project</h3>
-  <p>
-    The Team Daily Tracker is a simple web application that allows users to create an account, log in,
-    and track their daily work activities. The application includes a user table with a unique user ID
-    and password, and anyone can create a new user account through the registration page.
-  </p>
+    <main>
+        <h2>Project Description – Team Daily Tracker</h2>
 
-  <p>
-    After logging in, each user can perform full CRUD operations (Create, Read, Update, Delete) on their
-    own daily activity entries. Each entry includes:
-  </p>
+        <h3>About the Project</h3>
+        <p>
+            The Team Daily Tracker is a simple web application that allows users to create an account, log in,
+            and track their daily work activities. The application includes a user table with a unique user ID
+            and password, and anyone can create a new user account through the registration page.
+        </p>
 
-  <ul>
-    <li>Checking accounts opened</li>
-    <li>Savings accounts opened</li>
-    <li>Credit cards</li>
-    <li>CCGs</li>
-    <li>Referrals</li>
-    <li>Calls</li>
-  </ul>
+        <p>
+            After logging in, each user can perform full CRUD operations (Create, Read, Update, Delete) on their
+            own daily activity entries. Each entry includes:
+        </p>
 
-  <p>
-    Users can also <strong>read entries created by other users</strong>, allowing team members to view
-    each other's daily performance. However, users can only <strong>create, update, and delete their own
-    entries</strong>. They cannot modify entries created by others. This ensures proper access control
-    while still supporting team visibility.
-  </p>
+        <ul>
+            <li>Checking accounts opened</li>
+            <li>Savings accounts opened</li>
+            <li>Credit cards</li>
+            <li>CCGs</li>
+            <li>Referrals</li>
+            <li>Calls</li>
+        </ul>
 
-  <h3>Pages Included in the Project</h3>
-  <ul>
-    <li>Create Account (registration)</li>
-    <li>Login</li>
-    <li>Dashboard (view personal and team entries)</li>
-    <li>Add Entry</li>
-    <li>Edit Entry</li>
-    <li>Delete Entry</li>
-    <li>Logout</li>
-  </ul>
+        <p>
+            Users can also <strong>read entries created by other users</strong>, allowing team members to view
+            each other's daily performance. However, users can only <strong>create, update, and delete their own
+            entries</strong>. They cannot modify entries created by others. This ensures proper access control
+            while still supporting team visibility.
+        </p>
 
-  <h3>Tech Stack Used</h3>
-  <ul>
-    <li><strong>PHP</strong> – Handles backend logic, user authentication, and CRUD operations.</li>
-    <li><strong>MySQL</strong> – Stores user accounts, daily entries, and activity data.</li>
-    <li><strong>HTML & CSS</strong> – Provides structure and styling for all pages.</li>
-    <li><strong>JavaScript</strong> – Enhances user experience with validation and dynamic UI behavior.</li>
-  </ul>
+        <h3>Pages Included in the Project</h3>
+        <ul>
+            <li>Create Account (registration)</li>
+            <li>Login</li>
+            <li>Dashboard (view personal and team entries)</li>
+            <li>Add Entry</li>
+            <li>Edit Entry</li>
+            <li>Delete Entry</li>
+            <li>Logout</li>
+        </ul>
 
-  <h3>Testing Login (Example)</h3>
-  <p>
-    <strong>Username:</strong> testuser<br>
-    <strong>Password:</strong> test123
-  </p>
+        <h3>Tech Stack Used</h3>
+        <ul>
+            <li><strong>PHP</strong> – Handles backend logic, user authentication, and CRUD operations.</li>
+            <li><strong>MySQL</strong> – Stores user accounts, daily entries, and activity data.</li>
+            <li><strong>HTML & CSS</strong> – Provides structure and styling for all pages.</li>
+            <li><strong>JavaScript</strong> – Enhances user experience with validation and dynamic UI behavior.</li>
+        </ul>
 
-  <!-- ⭐ Added your live InfinityFree project link -->
-  <p>
-    <strong>Live Project Link:</strong>
-    <a href="http://hakimaweb250.infinityfreeapp.com/" target="_blank">
-      http://hakimaweb250.infinityfreeapp.com/
-    </a>
-  </p>
+        <h3>Testing Login (Example)</h3>
+        <p>
+            <strong>Username:</strong> testuser<br>
+            <strong>Password:</strong> test123
+        </p>
 
-</main>
+        <h3>Live Project Link</h3>
+        <p>
+            <a href="http://hakimaweb250.infinityfreeapp.com/" target="_blank">
+                http://hakimaweb250.infinityfreeapp.com/
+            </a>
+        </p>
 
-<!-- Footer include -->
-<div data-include="components/footer.html"></div>
+    </main>
 
-<script src="scripts/HTMLInclude.js"></script>
-<script src="https://lint.page/kit/880bd5.js" crossorigin="anonymous"></script>
+    <footer>
+        <p>
+            <a href="https://github.com/hakima16" target="_blank">GitHub</a> |
+            <a href="https://hakima16.github.io/" target="_blank">GitHub.io</a> |
+            <a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a>
+        </p>
+
+        <p id="current-year"></p>
+
+        <script>
+            const year = new Date().getFullYear();
+            document.getElementById('current-year').textContent = `© ${year} Hakima Chabane`;
+        </script>
+    </footer>
 
 </body>
 </html>
-

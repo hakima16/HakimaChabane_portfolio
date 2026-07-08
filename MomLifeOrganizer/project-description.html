@@ -1,83 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hakima Chabane's Helpful Crane | WEB215 | MomLife Organizer – Project Description</title>
-  <link rel="stylesheet" type="text/css" href="styles/default.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MomLife Organizer – Project Description | Hakima Chabane</title>
+
+    <!-- Use your existing CSS file -->
+    <link rel="stylesheet" href="styles/default.css">
 </head>
 
 <body>
 
-<!-- Header include -->
-<div data-include="components/header.html"></div>
+    <header>
+        <h1>MomLife Organizer</h1>
+        <p class="sub-heading">MERN Stack · Family Scheduling · CRUD · Deployment</p>
 
-<main>
-  <h2>Project Description – MomLife Organizer</h2>
+        <a href="../index.html" class="back-btn">← Back to Home</a>
+    </header>
 
-  <h3>About the Project</h3>
-  <p>
-    MomLife Organizer is a small MERN application designed to help busy moms manage their family schedules
-    in one place. The app allows the user to keep track of kids’ weekly activities, doctor appointments,
-    shopping lists, cleaning tasks, and family trips. The goal is to organize multiple parts of family life
-    through a simple, user-friendly interface.
-  </p>
+    <main>
+        <h2>Project Description – MomLife Organizer</h2>
 
-  <p>
-    The application uses a single login (<strong>web215user / LetMeIn!</strong>) to access protected pages.
-    Once logged in, the user can view and manage all family-related data.
-  </p>
+        <h3>About the Project</h3>
+        <p>
+            MomLife Organizer is a small MERN application designed to help busy moms manage their family schedules
+            in one place. The app allows the user to keep track of kids’ weekly activities, doctor appointments,
+            shopping lists, cleaning tasks, and family trips. The goal is to organize multiple parts of family life
+            through a simple, user-friendly interface.
+        </p>
 
-  <h3>Data Structure & Relationships</h3>
-  <p>
-    The project includes sample data such as kids, activities, appointments, and tasks. These demonstrate
-    a many-to-many relationship, for example:
-  </p>
+        <p>
+            The application uses a single login (<strong>web215user / LetMeIn!</strong>) to access protected pages.
+            Once logged in, the user can view and manage all family-related data.
+        </p>
 
-  <ul>
-    <li>One kid can have many activities</li>
-    <li>One activity can belong to multiple kids</li>
-  </ul>
+        <h3>Data Structure & Relationships</h3>
+        <p>
+            The project includes sample data such as kids, activities, appointments, and tasks. These demonstrate
+            a many-to-many relationship, for example:
+        </p>
 
-  <p>
-    The final application will support full CRUD (Create, Read, Update, Delete) on all major data types.
-  </p>
+        <ul>
+            <li>One kid can have many activities</li>
+            <li>One activity can belong to multiple kids</li>
+        </ul>
 
-  <h3>Tech Stack Used</h3>
-  <ul>
-    <li><strong>MongoDB</strong> – Cloud database hosted on MongoDB Atlas.</li>
-    <li><strong>Express.js</strong> – Backend API and routing.</li>
-    <li><strong>React</strong> – Frontend user interface.</li>
-    <li><strong>Node.js</strong> – Server environment for backend logic.</li>
-    <li><strong>Netlify</strong> – Hosting for the frontend.</li>
-    <li><strong>Render</strong> – Hosting for the backend API.</li>
-  </ul>
+        <p>
+            The final application will support full CRUD (Create, Read, Update, Delete) on all major data types.
+        </p>
 
-  <h3>Deployment Plan</h3>
-  <p>
-    I will begin by deploying a simple skeleton page that loads successfully on my hosted site. After that,
-    I will build out the full functionality, connecting the frontend, backend, and database.
-  </p>
+        <h3>Tech Stack Used</h3>
+        <ul>
+            <li><strong>MongoDB</strong> – Cloud database hosted on MongoDB Atlas.</li>
+            <li><strong>Express.js</strong> – Backend API and routing.</li>
+            <li><strong>React</strong> – Frontend user interface.</li>
+            <li><strong>Node.js</strong> – Server environment for backend logic.</li>
+            <li><strong>Netlify</strong> – Hosting for the frontend.</li>
+            <li><strong>Render</strong> – Hosting for the backend API.</li>
+        </ul>
 
-  <!-- ⭐ Added your live project link here -->
-  <p>
-    <strong>Live Project Link:</strong>
-    <a href="https://momlifeorganizer.netlify.app" target="_blank">
-      https://momlifeorganizer.netlify.app
-    </a>
-  </p>
+        <h3>Deployment Plan</h3>
+        <p>
+            I will begin by deploying a simple skeleton page that loads successfully on my hosted site. After that,
+            I will build out the full functionality, connecting the frontend, backend, and database.
+        </p>
 
-</main>
+        <p>
+            <strong>Live Project Link:</strong>
+            <a href="https://momlifeorganizer.netlify.app" target="_blank">
+                https://momlifeorganizer.netlify.app
+            </a>
+        </p>
 
-<!-- Footer include -->
-<div data-include="components/footer.html"></div>
+    </main>
 
-<script src="scripts/HTMLInclude.js"></script>
-<script src="https://lint.page/kit/880bd5.js" crossorigin="anonymous"></script>
+    <footer>
+        <p>
+            <a href="https://github.com/hakima16" target="_blank">GitHub</a> |
+            <a href="https://hakima16.github.io/" target="_blank">GitHub.io</a> |
+            <a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a>
+        </p>
+
+        <p id="current-year"></p>
+
+        <script>
+            const year = new Date().getFullYear();
+            document.getElementById('current-year').textContent = `© ${year} Hakima Chabane`;
+        </script>
+    </footer>
 
 </body>
 </html>
-
-
-
